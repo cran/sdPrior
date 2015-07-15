@@ -1,7 +1,7 @@
 Package: sdPrior
 Title: Scale-Dependent Hyperpriors in Structured Additive
         Distributional Regression
-Version: 0.2
+Version: 0.3
 Author: Nadja Klein <nklein@uni-goettingen.de>
 Maintainer: Nadja Klein <nklein@uni-goettingen.de>
 Description: Utility functions for scale-dependent and alternative hyperpriors.
@@ -9,7 +9,7 @@ Depends: R (>= 3.1.0)
 Imports: splines, caTools, GB2, MASS, stats
 LazyData: true
 License: GPL-2
-Packaged: 2015-07-07 12:19:22 UTC; nklein
+Packaged: 2015-07-15 14:44:46 UTC; nklein
 NeedsCompilation: no
 Repository: CRAN
-Date/Publication: 2015-07-07 17:47:35
+Date/Publication: 2015-07-16 01:13:54
