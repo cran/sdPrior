@@ -4,7 +4,6 @@
 #' for \eqn{\tau^2} (half-Chauchy for \eqn{\tau})
 
 
-
 #' 
 #' @param f point the marginal density to be evaluated at. 
 #' @param theta denotes the scale parameter of the generalised beta prior hyperprior for \eqn{\tau^2} (half-Chauchy for \eqn{\tau}).  
@@ -13,9 +12,11 @@
 #' @return the marginal density evaluated at point x.
 #' @author Nadja Klein
 #' @references Nadja Klein and Thomas Kneib (2015). Scale-Dependent Priors for Variance Parameters in Structured Additive Distributional Regression. 
-#' \emph{Working Paper}.
-#' 
+#' \emph{Working Paper}. 
+
 #' @import splines
+#' @import MASS
+#' @import stats
 #' @import GB2
 #' @export
 #' @examples

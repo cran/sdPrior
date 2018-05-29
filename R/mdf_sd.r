@@ -2,8 +2,6 @@
 #' 
 #' This function computes the marginal density of \eqn{z_p'\beta} for scale-dependent priors for \eqn{\tau^2}
 
-
-
 #' 
 #' @param f point the marginal density to be evaluated at. 
 #' @param theta denotes the scale parameter of the scale-dependent hyperprior for \eqn{\tau^2}.  
@@ -13,8 +11,9 @@
 #' @author Nadja Klein
 #' @references Nadja Klein and Thomas Kneib (2015). Scale-Dependent Priors for Variance Parameters in Structured Additive Distributional Regression. 
 #' \emph{Working Paper}.
-#' 
 #' @import splines
+#' @import stats
+#' @import MASS
 #' @export
 #' @examples
 #' set.seed(123)
@@ -53,4 +52,4 @@ mdf_sd <- function(f, theta, Z, Kinv)
 	res <- c(res,rescountf)  
 	}
   return(res)
-  }
+}

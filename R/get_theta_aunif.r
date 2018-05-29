@@ -23,7 +23,10 @@
 #' 
 #' Andrew Gelman (2006). Prior Distributions for Variance Parameters in Hierarchical Models. 
 #' \emph{Bayesian Analysis}, \bold{1}(3), 515--533. 
+
 #' @import splines
+#' @import stats
+#' @import MASS
 #' @export
 #' @examples
 #' set.seed(123)

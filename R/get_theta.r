@@ -1,4 +1,4 @@
-#' Find Scale Parameter for Hyperprior
+#' Find Scale Parameter for (Scale Dependent) Hyperprior 
 #' 
 #' This function implements a optimisation routine that computes the scale parameter \eqn{\theta}
 #' of the scale dependent hyperprior for a given design matrix and prior precision matrix
@@ -18,8 +18,11 @@
 #' @author Nadja Klein
 #' @references Nadja Klein and Thomas Kneib (2015). Scale-Dependent Priors for Variance Parameters in Structured Additive Distributional Regression. 
 #' \emph{Working Paper}.
+
 #' @import caTools
 #' @import splines
+#' @import stats
+#' @import MASS
 #' @export
 #' @examples
 #' \dontrun{
@@ -42,7 +45,7 @@
 #' theta <- get_theta(alpha = 0.01, method = "integrate", Z = Z, 
 #'                             c = 3, eps = .Machine$double.eps, Kinv = Kinv)$root
 #' } 
-
+#'
 
 get_theta <- function(alpha = 0.01, method = "integrate", Z, c = 3, eps = .Machine$double.eps, Kinv) 
   {

@@ -22,8 +22,11 @@
 #' 
 #' Andrew Gelman (2006). Prior Distributions for Variance Parameters in Hierarchical Models. 
 #' \emph{Bayesian Analysis}, \bold{1}(3), 515--533. 
+
 #' @import splines
+#' @import MASS
 #' @import GB2
+#' @import stats
 #' @export
 #' @examples
 #' set.seed(123)
@@ -60,7 +63,7 @@
 #' theta <- get_theta_gbp(alpha = 0.01, method = "integrate", Z = Z, 
 #'                             c = 3, eps = .Machine$double.eps, Kinv = Kinv)$root
 #' } 
-
+#'
 
 get_theta_gbp <- function(alpha = 0.01, method = "integrate", Z, c = 3, eps = .Machine$double.eps, Kinv) 
   {

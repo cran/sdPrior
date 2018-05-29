@@ -28,7 +28,10 @@
 #' Stefan Lang and Andreas Brezger (2004). Bayesian P-Splines. 
 #' \emph{Journal of Computational and Graphical Statistics}, \bold{13}, 183-212. 
 #' @details Currently, the implementation only works properly for the cases \code{a} unequal \code{b}.
+
 #' @import splines
+#' @import stats
+#' @import MASS
 #' @export
 #' @examples
 #' set.seed(123)

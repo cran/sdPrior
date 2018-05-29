@@ -16,7 +16,8 @@
 #' \emph{Working Paper}.
 #' 
 #' @import splines
-#' @import GB2
+#' @import stats
+#' @import MASS
 #' @export
 #' @examples
 #' set.seed(123)

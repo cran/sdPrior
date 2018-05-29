@@ -34,6 +34,8 @@ NULL
 
 #' Compute Density Function of Approximated (Differentiably) Uniform Distribution. 
 
+
+
 #' 
 #' @param x  denotes the argument of the density function.  
 #' @param scale the scale parameter originally defining the upper bound of the uniform distribution.
@@ -50,7 +52,9 @@ NULL
 #' \emph{Working Paper}.
 #'
 #' @seealso \code{\link{rapprox_unif}},\code{\link{papprox_unif}}
+
 #' @export
+#'
 
 dapprox_unif <- function(x,scale,tildec=13.86294) 
   {
@@ -77,7 +81,10 @@ NULL
 #' @references Nadja Klein and Thomas Kneib (2015). Scale-Dependent Priors for Variance Parameters in Structured Additive Distributional Regression. 
 #' \emph{Working Paper}.
 #' @seealso \code{\link{rapprox_unif}},\code{\link{papprox_unif}}
+
+#' @import stats
 #' @export
+#'
 
 rapprox_unif<-function (n=100, scale,tildec=13.86294,seed=123) 
   {
@@ -116,8 +123,9 @@ NULL
 #' \emph{Working Paper}.
 #'
 #' @seealso \code{\link{rapprox_unif}},\code{\link{dapprox_unif}}
+
 #' @export
- 
+ #'
  
 papprox_unif <- function(x,scale,tildec=13.86294) 
   {
@@ -152,7 +160,7 @@ NULL
 #' 
 #' @param x the covariate vector.  
 #' @param degree of the B-splines, default is 3.
-#' @param knots number of knots, default is 20. 
+#' @param m number of knots, default is 20. 
 #' @param min_x the left interval boundary, default is min(x). 
 #' @param max_x the right interval boundary, defalut is max(x). 
 #' @return a list with design matrix at distinct covariates, design matrix at all observations, 
@@ -162,11 +170,13 @@ NULL
 #' \emph{Journal of Computational and Graphical Statistics}, \bold{13}, 183--212.
 #' 
 #' Belitz, C., Brezger, A., Klein, N., Kneib, T., Lang, S., Umlauf, N. (2015): BayesX - Software for Bayesian inference in structured additive regression models.
-#' Version 3.0.1. Available from http://www.bayesx.org. 
+#' Version 3.0.1. Available from http://www.bayesx.org.
+ 
 #' @import splines
 #' @export
+#'
 
-DesignM <- function(x,degree=3,knots=20,min_x=min(x),max_x=max(x)) {
+DesignM <- function(x,degree=3,m=20,min_x=min(x),max_x=max(x)) {
 
   ##############################################################################################
   #reduce establishment of design matrix to unique and sorted observations
@@ -183,16 +193,14 @@ DesignM <- function(x,degree=3,knots=20,min_x=min(x),max_x=max(x)) {
   ##############################################################################################  
   #set degree of B-splines and number of inner knots
   degree <- degree
-  knots <- knots
   l <- degree
-  m <- knots
   hilfsgr <- (max_x_work-min_x_work)/100
-  step <- (max_x_work+hilfsgr-min_x_work+hilfsgr)/(knots-1)
+  step <- (max_x_work+hilfsgr-min_x_work+hilfsgr)/(m-1)
   knoten_B=seq(min_x_work-hilfsgr-degree*step,max_x_work+hilfsgr+degree*step,by=step)
   if(length(knoten_B)>1) {
     Z_BayesX<- splineDesign(knoten_B,x_work,ord=degree+1,outer.ok=T) #designmatrix of x_work as in BayesX
   } else {
-	knoten=seq(min_x_work-0.001-(degree)*((max_x_work+0.001-min_x_work+0.001)/(knots-1)),max_x_work+0.001+(degree)*((max_x_work+0.002-min_x_work)/(knots-1)),length=26)
+	knoten=seq(min_x_work-0.001-(degree)*((max_x_work+0.001-min_x_work+0.001)/(m-1)),max_x_work+0.001+(degree)*((max_x_work+0.002-min_x_work)/(m-1)),length=m+2*l)
 	Z_BayesX<- splineDesign(knoten,x_work,ord=degree+1,outer.ok=T) #designmatrix of x_work as in BayesX
   }
  
