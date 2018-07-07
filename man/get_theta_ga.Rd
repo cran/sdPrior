@@ -45,7 +45,7 @@ Z <- matrix(DesignM(x)$Z_B,nrow=1)
 theta <- get_theta_ga(alpha = 0.01, method = "integrate", Z = Z, 
                             c = 3, eps = .Machine$double.eps, Kinv = Kinv)$root
 
-\donttest{
+\dontrun{
 
 set.seed(91179)
 library(BayesX)

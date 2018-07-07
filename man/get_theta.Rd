@@ -30,7 +30,7 @@ of the scale dependent hyperprior for a given design matrix and prior precision 
 such that approximately \eqn{P(|f(x_{k}|\le c,k=1,\ldots,p)\ge 1-\alpha}
 }
 \examples{
-\donttest{
+\dontrun{
 
 set.seed(91179)
 library(BayesX)

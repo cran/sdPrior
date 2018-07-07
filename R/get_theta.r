@@ -19,7 +19,6 @@
 #' @references Nadja Klein and Thomas Kneib (2015). Scale-Dependent Priors for Variance Parameters in Structured Additive Distributional Regression. 
 #' \emph{Working Paper}.
 
-#' @import caTools
 #' @import splines
 #' @import stats
 #' @import MASS
@@ -97,14 +96,15 @@ get_theta <- function(alpha = 0.01, method = "integrate", Z, c = 3, eps = .Machi
       } else if(method == "sum") {
         stop("selected method not implemented yet.")
       } else if(method == "trapezoid") {
-        tempvar <- 0
-        for(countnknots in 1:NROW(Z)) 
-		  {
-          xseq <- 2 * (0:1000) * c / 1000 - c + 0.00001
-          mdf <- sapply(xseq, FUN = marginal_df, lambda = lambda, ztz = Cov[countnknots])
-          tempvar <- tempvar + alphafx[countnknots] + trapz(xseq, mdf)
-          }
-        1 - tempvar
+			stop("selected method not implemented yet.")
+        # tempvar <- 0
+        # for(countnknots in 1:NROW(Z)) 
+		  # {
+          # xseq <- 2 * (0:1000) * c / 1000 - c + 0.00001
+          # mdf <- sapply(xseq, FUN = marginal_df, lambda = lambda, ztz = Cov[countnknots])
+          # tempvar <- tempvar + alphafx[countnknots] + trapz(xseq, mdf)
+          # }
+        # 1 - tempvar
       } else {
         stop("selected method not implemented.")
       }

@@ -1,6 +1,6 @@
-d47ec204dccdea817b43032a9ff7513a *DESCRIPTION
-e576d4eef116f9dd5bdc219f9b24f075 *NAMESPACE
-1471b1595169a7f9a5dd9889df70df9e *R/get_theta.r
+97ece0553db3c84d4914b913817e642e *DESCRIPTION
+c509988457db60700cc3ff409b0fbd52 *NAMESPACE
+3064c1339668e17eaaeb4bfe36cbf836 *R/get_theta.r
 0630a894bb4573fc8f02a330303c0a41 *R/get_theta_aunif.r
 ed62e0ef2eef1614741cb8f111de4ec0 *R/get_theta_ga.r
 2d267ef4ee401f88e490a7ef5ff34def *R/get_theta_gbp.r
@@ -20,10 +20,10 @@ be727cde3c1eecda0fde64192d9c9816 *R/utils_sdPrior.r
 fb9e11e786cf5730d42a59e1de0bf20d *inst/examples/zambia_height92.raw
 ad0b567c298829ea786417f675bfb828 *man/DesignM.Rd
 1c1fb7ab8a41e8c45c522f6423906e8b *man/dapprox_unif.Rd
-a20369bba8e4ba4c4c355a4c6af2a23d *man/get_theta.Rd
+450b757acc5547aba730ab3c7bb85121 *man/get_theta.Rd
 61aa959d9ff9762ce5217bf7b5b5eec7 *man/get_theta_aunif.Rd
-7c045bfac6f6a4ea5b05bd1c9c7b4117 *man/get_theta_ga.Rd
-ffc8f0247004ab54c837aed57e0ebc0a *man/get_theta_gbp.Rd
+7dcc1ddb7e6ad72fe1e78ad32d5074ab *man/get_theta_ga.Rd
+9350672eea297e6d67d58bffbb4c0360 *man/get_theta_gbp.Rd
 8e6b58b5ea084a1e5337a1af42d6e19c *man/get_theta_ig.Rd
 7f86aca27d793a455ec41336db0fde1c *man/get_theta_linear.Rd
 b3169a38a4e19305c3827820afcb966b *man/hyperpar.Rd
