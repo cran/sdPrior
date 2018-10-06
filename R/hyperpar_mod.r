@@ -22,7 +22,7 @@
 #' @param ncores default is 1. number of cores is mc=TRUE
 #' @param truncate default is 1. If < 1 the lowrank approximation is based on on cumsum(values)/sum(values).
 #' @return the optimal value for theta
-#' @author Nadja Klein, Thomas Kneib
+#' @author Nadja Klein
 #' @references Kneib, T., Klein, N., Lang, S. and Umlauf, N. (2017) Modular Regression - A Lego System for Building Structured Additive Distributional Regression Models with Tensor Product Interactions 
 #' \emph{Working Paper}.
 #' 

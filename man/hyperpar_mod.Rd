@@ -54,5 +54,5 @@ Kneib, T., Klein, N., Lang, S. and Umlauf, N. (2017) Modular Regression - A Lego
 \emph{Working Paper}.
 }
 \author{
-Nadja Klein, Thomas Kneib
+Nadja Klein
 }

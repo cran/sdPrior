@@ -1,4 +1,4 @@
-97ece0553db3c84d4914b913817e642e *DESCRIPTION
+7f0557fe940ff14edbf843ab39f0d592 *DESCRIPTION
 c509988457db60700cc3ff409b0fbd52 *NAMESPACE
 3064c1339668e17eaaeb4bfe36cbf836 *R/get_theta.r
 0630a894bb4573fc8f02a330303c0a41 *R/get_theta_aunif.r
@@ -7,7 +7,7 @@ ed62e0ef2eef1614741cb8f111de4ec0 *R/get_theta_ga.r
 77ba0c9e13c6eb30db4f1c24217c2ad6 *R/get_theta_ig.r
 68ebb1103a14fd454197e6aa90b046e4 *R/get_theta_linear.r
 0450ac5fe68b48eed02adbbf1cd32377 *R/hyperpar.r
-8bfcc0c88de92b912fc448595f2d83be *R/hyperpar_mod.r
+8c16fbd6cc746038496bccf6581ada7c *R/hyperpar_mod.r
 ca59af4b255145eb6b6aa8d217e7e0b6 *R/hyperparlin.r
 2101a2b72fb375693fc3fa0b92492620 *R/mdbeta.r
 b1d1dcb9d74c89ddaa2e0ab8d83ca780 *R/mdf_aunif.r
@@ -27,7 +27,7 @@ ad0b567c298829ea786417f675bfb828 *man/DesignM.Rd
 8e6b58b5ea084a1e5337a1af42d6e19c *man/get_theta_ig.Rd
 7f86aca27d793a455ec41336db0fde1c *man/get_theta_linear.Rd
 b3169a38a4e19305c3827820afcb966b *man/hyperpar.Rd
-fc737a6f48f4f250d2027806ec0993f1 *man/hyperpar_mod.Rd
+0f773a3f5ae7eed632c871b4db39fad9 *man/hyperpar_mod.Rd
 1fe6800453e8d35a82a4556be4b11536 *man/hyperparlin.Rd
 5c93b64605786c72b224e823de30d768 *man/mdbeta.Rd
 18f4c6b9eaf509d9c1fa53aea8fa851f *man/mdf_aunif.Rd
